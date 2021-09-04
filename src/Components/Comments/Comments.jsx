@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Comments.scss";
 import useTheme from "../../Hooks/useTheme";
 import { ContextLang } from "../../Context/Language";
