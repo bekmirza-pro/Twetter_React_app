@@ -1,0 +1,142 @@
+.home-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 1px 0 0 rgb(194, 194, 194);
+}
+
+.comments-section {
+    width: 100%;
+    max-width: 750px;
+    box-shadow: 1px 0 0 0 rgb(194, 194, 194);
+    z-index: 10;
+}
+
+.comments-box {
+    padding: 10px 20px;
+    box-shadow: 0 1px 0 0 rgb(194, 194, 194);
+}
+
+.name-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    margin-left: 10px;
+}
+
+.heading-p {
+    margin: 0;
+}
+
+.paragraf {
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.home {
+    margin: 0;
+}
+
+.heppening {
+    display: flex;
+    margin-bottom: 37px;
+}
+
+.p {
+    margin-left: 10px;
+    // color: #828282;
+}
+
+.smile-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.smile_img {
+    margin-left: 23px;
+}
+
+.smile-small-_box {
+    margin-left: 70px;
+}
+
+.comments_btn {
+    width: 100%;
+    max-width: 108px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #1D9BF0;
+    opacity: 0.4;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 120px;
+    border-radius: 27.5px;
+    border: none;
+}
+
+.comment_box {
+    width: 100%;
+    max-width: 900px;
+    padding: 30px 20px;
+    box-shadow: 0 1px 0 0 rgb(194, 194, 194);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    // margin-bottom: 26px;
+}
+
+.pragnoz {
+    display: flex;
+    margin-top: 23px;
+}
+
+.stiker_img {
+    margin-left: 70px;
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.number {
+    font-size: 16px;
+    color: #536471;
+    margin-left: 8px;
+}
+
+.comment_boxx {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px 20px;
+}
+
+.kabab {
+    margin-left: 70px;
+    margin-top: 10px;
+    width: 600px;
+}
+
+.theme-box {
+    width: 90px;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1450px) {
+    .name-box {
+        width: 100%;
+    }
+    .kabab {
+        width: 80%;
+    }
+    .comments-section {
+        box-shadow: none;
+    }
+}
