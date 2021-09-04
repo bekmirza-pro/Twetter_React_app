@@ -50,7 +50,9 @@ function Search() {
             </div>
             <img src={Dot} alt="dot" />
           </div>
-          <a className="link" href="#">
+          <a
+            className="link"
+            href="https://github.com/bekmirza-pro/Twetter_React_app">
             Show more
           </a>
         </div>
@@ -78,7 +80,9 @@ function Search() {
             </div>
             <button className="follow_btn">Follow</button>
           </div>
-          <a className="link" href="#">
+          <a
+            className="link"
+            href="https://github.com/bekmirza-pro/Twetter_React_app">
             Show more
           </a>
         </div>
