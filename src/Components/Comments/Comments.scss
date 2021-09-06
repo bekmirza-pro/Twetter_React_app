@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 600px;
+    width: 640px;
     margin-left: 10px;
 }
 
@@ -43,6 +43,7 @@
 
 .heppening {
     display: flex;
+    align-items: center;
     margin-bottom: 37px;
 }
 
@@ -55,10 +56,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.smile_img {
-    margin-left: 23px;
 }
 
 .smile-small-_box {
@@ -77,6 +74,7 @@
     border-radius: 120px;
     border-radius: 27.5px;
     border: none;
+    cursor: pointer;
 }
 
 .comment_box {
@@ -102,11 +100,12 @@
     margin-right: 18px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .number {
     font-size: 16px;
-    color: #536471;
+    // color: #536471;
     margin-left: 8px;
 }
 
@@ -127,6 +126,40 @@
     display: flex;
     // align-items: center;
     justify-content: space-between;
+}
+
+.button_theme {
+    font-size: 18px;
+    border: none;
+    border-radius: 30%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.smile_btn {
+    width: 30px;
+    height: 25px;
+    border: none;
+    background-color: #fff;
+    margin-right: 23px;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.input_commit {
+    width: 240px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 10px 5px;
+    font-size: 19px;
+    background-color: #fff;
+}
+
+.todo_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 @media only screen and (max-width: 1450px) {

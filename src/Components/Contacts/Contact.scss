@@ -1,5 +1,5 @@
 .contact-box {
-    box-shadow: 1px 0 0 0 rgb(194, 194, 194);
+    box-shadow: 1px 0 0 0 rgb(102, 102, 102);
     z-index: 10;
     width: 100%;
     max-width: 300px;
@@ -11,7 +11,7 @@
     list-style: none;
     width: 100%;
     max-width: 400px;
-    margin-left: 25px;
+    margin-left: 35px;
     display: flex;
     flex-direction: column;
     margin-top: 25px;
@@ -38,6 +38,7 @@
     padding: 15px 90px;
     margin-bottom: 263px;
     margin-top: 25px;
+    margin-left: 10px;
     font-size: 18px;
     color: #fff;
     background-color: #1D9BF0;

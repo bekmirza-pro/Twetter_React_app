@@ -55,16 +55,19 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1450px;
+    max-width: 1550px;
     margin: 0 auto;
-    padding: 32px 20px;
+    // margin-top: 30px;
+    // padding: 32px 20px;
     display: flex;
 }
 
 // Theme
 .dark {
     color: #fff;
-    background-color: rgba(87, 81, 0, 0.562);
+    background-color: #1d3557;
+    // background-color: #184e77;
+    // background-color: #262730;
 }
 
 .light {
@@ -74,6 +77,18 @@ img {
 
 .star {
     cursor: pointer;
+}
+
+.hard_img {
+    cursor: pointer;
+}
+
+.hard_img:hover path {
+    fill: #EF1C5C;
+}
+
+.line_img:hover path {
+    fill: #0CB245;
 }
 
 @media only screen and (max-width: 1280px) {
