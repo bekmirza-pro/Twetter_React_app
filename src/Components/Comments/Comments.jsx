@@ -20,12 +20,24 @@ import Star from "../Lib/Svg/Star.jsx";
 
 import Commit from "../../Assets/Images/commit.png";
 import Line from "../Lib/Svg/Line";
-import Hard from "../Lib/Svg/Hard";
 import Vektor from "../../Assets/Images/vektor4.png";
 import Diagramma2 from "../../Assets/Images/diagramma2.png";
 
+import TwetterLike from "../TwetterLike/TwetterLike";
+
 function Comments() {
   const elInput = useRef(null);
+  const [userCommit, setUsercommit] = React.useState("");
+  const [disabled, setDisabled] = React.useState(true);
+
+  React.useEffect(() => {
+    if (userCommit.length > 0) {
+      setDisabled(false);
+    } else {
+      setDisabled(true);
+    }
+    // window.document.title = userCommit;
+  }, [userCommit]);
 
   const [tema, ColorTema] = useTheme();
   const { lng, setLang } = React.useContext(ContextLang);
@@ -79,8 +91,8 @@ function Comments() {
               type="text"
               placeholder={content[lng].heppening}
               ref={elInput}
+              onChange={(evt) => setUsercommit(evt.target.value.trim())}
             />
-            {/* <p className="p">What’s happening</p> */}
           </div>
           <div className="smile-box">
             <div className="smile-small-_box">
@@ -102,14 +114,15 @@ function Comments() {
             </div>
             <button
               className="comments_btn"
+              type="submit"
+              disabled={disabled}
               onClick={() => {
                 const newTodo = {
                   id: todos[todos.length - 1]?.id + 1 || 0,
                   title: elInput.current.value.trim(),
-                  isComplated: false,
                 };
 
-                setTodos([...todos, newTodo]);
+                setTodos([newTodo, ...todos]);
                 elInput.current.value = null;
               }}>
               Tweet
@@ -149,7 +162,7 @@ function Comments() {
               <span className="number">1</span>
             </div>
             <div className="stiker_img">
-              <Hard />
+              <TwetterLike />
               <span className="number">3</span>
             </div>
             <div className="stiker_img">
@@ -190,7 +203,7 @@ function Comments() {
               <span className="number">1</span>
             </div>
             <div className="stiker_img">
-              <Hard />
+              <TwetterLike />
               <span className="number">8</span>
             </div>
             <div className="stiker_img">
@@ -230,7 +243,7 @@ function Comments() {
               <span className="number">1</span>
             </div>
             <div className="stiker_img">
-              <Hard />
+              <TwetterLike />
               <span className="number">8</span>
             </div>
             <div className="stiker_img">

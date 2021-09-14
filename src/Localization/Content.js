@@ -56,7 +56,7 @@ const content = {
         paragraf: "Terms of Service Privacy Policy Cookie Policy",
         paragraf2: "Imprint Ads Info More ··· © 2021 Twitter, Inc.",
         koproq: "Show more",
-        heppening: "What’s happening",
+        heppening: "What’s happening?",
         search: "Search Twitter",
     }
 };

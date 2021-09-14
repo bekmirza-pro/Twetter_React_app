@@ -1,6 +1,4 @@
 .contact-box {
-    box-shadow: 1px 0 0 0 rgb(102, 102, 102);
-    z-index: 10;
     width: 100%;
     max-width: 300px;
 }
@@ -29,6 +27,15 @@
 .heading_contact {
     font-size: 18px;
     margin-left: 22px;
+    cursor: pointer;
+}
+
+.heading-contact {
+    display: inline-block;
+    color: dimgray;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
     cursor: pointer;
 }
 

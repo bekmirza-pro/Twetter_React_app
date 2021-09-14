@@ -3,6 +3,7 @@ import "./Contact.scss";
 import useTheme from "../../Hooks/useTheme";
 import content from "../../Localization/Content";
 import { ContextLang } from "../../Context/Language";
+import { NavLink } from "react-router-dom";
 
 import Logo from "../../Assets/Images/twitter-logo.png";
 import Home from "../../Assets/Images/home.png";
@@ -21,14 +22,16 @@ function Contact() {
   const { lng } = React.useContext(ContextLang);
 
   return (
-    <div className={`contact-box ${tema}`}>
+    <nav className={`contact-box ${tema}`}>
       <ul className="conatact-list">
         <li className="contact-item">
           <img className="logo" src={Logo} alt="logo" />
         </li>
         <li className="contact-item">
           <img src={Home} alt="logo" width="26" height="23.62" />
-          <h3 className="heading_contact">{content[lng].home}</h3>
+          <NavLink className="heading-contact" to="/">
+            <h3>{content[lng].home}</h3>
+          </NavLink>
         </li>
         <li className="contact-item">
           <img src={Explore} alt="logo" width="23" />
@@ -52,7 +55,9 @@ function Contact() {
         </li>
         <li className="contact-item">
           <img src={Profile} alt="logo" width="20" height="24" />
-          <h3 className="heading_contact">{content[lng].profile}</h3>
+          <NavLink className="heading-contact" to="/profile">
+            <h3>{content[lng].profile}</h3>
+          </NavLink>
         </li>
         <li className="contact-item">
           <img src={More} alt="logo" width="25" />
@@ -76,7 +81,7 @@ function Contact() {
           <img className="dot" src={Dot} alt="dot" />
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 export default Contact;

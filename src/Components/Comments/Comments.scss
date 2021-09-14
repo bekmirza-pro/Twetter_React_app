@@ -3,19 +3,28 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    box-shadow: 0 1px 0 0 rgb(194, 194, 194);
+    border-bottom: 2px solid rgb(192, 192, 192);
+    // box-shadow: 0 2px 0 0 rgb(194, 194, 194);
 }
 
 .comments-section {
     width: 100%;
-    max-width: 750px;
-    box-shadow: 1px 0 0 0 rgb(194, 194, 194);
+    max-width: 795px;
+    border-left: 2px solid rgb(192, 192, 192);
+    border-right: 2px solid rgb(192, 192, 192);
+    overflow: scroll;
+    height: 1100px;
+    // box-shadow: 2px 0 0 0 rgb(194, 194, 194);
     z-index: 10;
+}
+
+.comments-section::-webkit-scrollbar {
+    width: 0;
 }
 
 .comments-box {
     padding: 10px 20px;
-    box-shadow: 0 1px 0 0 rgb(194, 194, 194);
+    border-bottom: 2px solid rgb(192, 192, 192);
 }
 
 .name-box {
@@ -68,9 +77,9 @@
     padding: 15px 30px;
     font-size: 18px;
     color: #fff;
-    background-color: #1D9BF0;
-    opacity: 0.4;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+    // opacity: 0.4;
+    // background: #0099ff;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.08);
     border-radius: 120px;
     border-radius: 27.5px;
     border: none;
@@ -81,7 +90,7 @@
     width: 100%;
     max-width: 900px;
     padding: 30px 20px;
-    box-shadow: 0 1px 0 0 rgb(194, 194, 194);
+    border-bottom: 2px solid rgb(192, 192, 192);
 }
 
 .box {
@@ -154,22 +163,11 @@
     padding: 10px 5px;
     font-size: 19px;
     background-color: #fff;
+    outline: none;
 }
 
 .todo_list {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-@media only screen and (max-width: 1450px) {
-    .name-box {
-        width: 100%;
-    }
-    .kabab {
-        width: 80%;
-    }
-    .comments-section {
-        box-shadow: none;
-    }
 }
